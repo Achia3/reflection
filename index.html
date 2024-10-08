@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection paper</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        
+
+        body {
+            background-image:url('codebackground.gif');
+        }
+
+        #box1 {
+            width: 500px;
+            border: 3px solid rgb(255, 0, 0);
+            padding: 50px;
+            margin: 20px;
+            height: 1775px;
+            background-color: #41f337;
+            border-radius: 10px;
+        }
+
+        #box1 {
+            top: 50%;
+            left: 50%;
+            margin-left: -300px;
+            margin-top: -300px;
+            position: absolute;
+            border-radius: 10px;
+        }
+
+        #box2 {
+            width: 440px;
+            border: 2px solid rgb(16, 70, 249);
+            padding: 50px;
+            margin: 20px;
+            height: 1720px;
+            background-color: #000000;
+            border-radius: 10px;
+        }
+
+        #box2 {
+            top: 55%;
+            left: 52%;
+            margin-left: -300px;
+            margin-top: -300px;
+            position: absolute;
+            border-radius: 10px;
+        }
+
+        #h1{
+           color: white; 
+           margin-left: 95px;
+        }
+
+        #underline {
+            color: rgb(195, 65, 173);
+        }
+
+        .content {
+            color: white;
+        }
+        
+        .content1 {
+            color: white;
+            font-size: 25px;
+            padding: 10px;
+        }
+
+        #wordcounter {
+            border: solid blue;
+            border-radius: 10px;
+            width: 340px;
+            height: 100px;
+            background-color: #000000;
+            padding: 20px;
+            position: fixed;
+        }
+
+        #wordcounter {
+            margin-left: 2%;
+            margin-top: 130px;
+            border: 2px solid rgb(25, 255, 25);
+            padding: 20px;
+        }
+
+        #result {
+            color: white;
+            margin-left: 210px;
+            margin-top: -73px;
+            font-size: 25px ;
+        }
+
+        #wag {
+            position: absolute;
+            margin-top: 1500px;
+            margin-left: 72%;
+            border: 1px solid rgb(63, 255, 63);
+        }
+
+    </style>
+ 
+ <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+ <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+</head>
+
+<body>
+
+    <div id="box1">
+
+    </div>
+
+    <div id="box2">
+       <u id="underline"><h1 id="h1">Reflection Paper</h1></u>
+       <p class="content">I was among the students of UPHSD Molino taking Bachelor in Computer Science degree, as a freshman student it gave me the warning instinct about data privacy and cybersecurity which is very crucial aspect nowadays regarding with technology. With us here in the Philippines where internet usage and digital transactions are on a steep incline, we cannot be reminded enough to be responsible protectors of our sensitive data amidst ever-evolving cyber threats.</p>
+        <p class="content">The seminar introduced some fundamental data privacy concepts and shed a light on how personal data is collected, processed, and stored by different parties. Republic Act No. 10173 or the Data Privacy Act of 2012 that gives rights to every individual about privacy of personal information being collected by any businesses, institutions, enterprises and other equivalent establishments like schools, in processing personal data. This helped to understand this law in a practical way on how it affects us in everyday life like we need this Law regarding online shopping, social media use, healthcare system. Studying security as a student, I realized how often we forget about the data we spread around whilst logging into services or applications. We discussed data breaches, phishing attacks, identity theft which opened me up to the risks involved in this area.</p>
+        <p class="content">A key takeaway from the seminar was the need for cybersecurity awareness at both an individual and organizational level. One of the speakers mentioned that human error is often the weakest link in cybersecurity. Simple practices like using strong passwords, enabling two-factor authentication, and avoiding suspicious links can go a long way in protecting against cyber attacks. This made me reflect on my own habits and how I can implement better security measures in my personal and academic life.</p>
+        <p class="content">But probably one of the most shocking things to hear in a seminar is on how these cybercriminals get our very personal information from us. He said, “Criminals use all sorts of means including phishing emails, social engineering and mining public profiles to gather data. They might impersonate or trick victims into sharing usernames & passwords, payment details, or PII. Hackers can also steal data by hacking into the unsecured public Wi-Fi networks, sifting through all of the data being transmitted on the network. The speaker also talked about real-life incidents when identities were stolen or accounts compromised by just one gullible click and most importantly, shared examples.</p>
+        <p class="content">It also really enlightened me to the drastic need for cybersecurity professionals as well. At this point in my computer science course, cybersecurity has shown itself to be one possible area I could pursue, because of how much it is needed today and will only continue to be. So the skills to acquire and principles to master in this area of information security(eg ethical hacking, network security and incident response) is a part that I would like to keep on delving more as I proceed with my education.</p>
+        <p class="content">In conclusion, the seminar on data privacy and cybersecurity was an eye-opener. It reminded me of my responsibility as a future computer scientist to prioritize security in the systems I build and the data I manage. With the increasing reliance on technology in every aspect of life, the role of cybersecurity cannot be overstated. I am grateful for the opportunity to attend the seminar, and I plan to incorporate the lessons learned into my academic and personal endeavors.</p>
+    </div>
+
+    <div id="wordcounter">
+        <p class="content1">Words Counted:</p>
+        <p id="result"></p>
+    </div>
+
+    <div id="wag" >
+        <img src="certificate.jpg" alt="certificate" width="400px" height="300px" >
+    </div>
+    
+<py-script>
+    reflection = """I was among the students of UPHSD Molino taking Bachelor in Computer Science degree, as a freshman student it gave me the warning instinct about data privacy and cybersecurity which is very crucial aspect nowadays regarding with technology. With us here in the Philippines where internet usage and digital transactions are on a steep incline, we cannot be reminded enough to be responsible protectors of our sensitive data amidst ever-evolving cyber threats.
+
+    The seminar introduced some fundamental data privacy concepts and shed a light on how personal data is collected, processed, and stored by different parties. Republic Act No. 10173 or the Data Privacy Act of 2012 that gives rights to every individual about privacy of personal information being collected by any businesses, institutions, enterprises and other equivalent establishments like schools, in processing personal data. This helped to understand this law in a practical way on how it affects us in everyday life like we need this Law regarding online shopping, social media use, healthcare system. Studying security as a student, I realized how often we forget about the data we spread around whilst logging into services or applications. We discussed data breaches, phishing attacks, identity theft which opened me up to the risks involved in this area.
+    
+    A key takeaway from the seminar was the need for cybersecurity awareness at both an individual and organizational level. One of the speakers mentioned that human error is often the weakest link in cybersecurity. Simple practices like using strong passwords, enabling two-factor authentication, and avoiding suspicious links can go a long way in protecting against cyber attacks. This made me reflect on my own habits and how I can implement better security measures in my personal and academic life.
+    
+    But probably one of the most shocking things to hear in a seminar is on how these cybercriminals get our very personal information from us. He said, “Criminals use all sorts of means including phishing emails, social engineering and mining public profiles to gather data. They might impersonate or trick victims into sharing usernames & passwords, payment details, or PII. Hackers can also steal data by hacking into the unsecured public Wi-Fi networks, sifting through all of the data being transmitted on the network. The speaker also talked about real-life incidents when identities were stolen or accounts compromised by just one gullible click and most importantly, shared examples.
+    
+    It also really enlightened me to the drastic need for cybersecurity professionals as well. At this point in my computer science course, cybersecurity has shown itself to be one possible area I could pursue, because of how much it is needed today and will only continue to be. So the skills to acquire and principles to master in this area of information security(eg ethical hacking, network security and incident response) is a part that I would like to keep on delving more as I proceed with my education.
+    
+    In conclusion, the seminar on data privacy and cybersecurity was an eye-opener. It reminded me of my responsibility as a future computer scientist to prioritize security in the systems I build and the data I manage. With the increasing reliance on technology in every aspect of life, the role of cybersecurity cannot be overstated. I am grateful for the opportunity to attend the seminar, and I plan to incorporate the lessons learned into my academic and personal endeavors."""
+
+    count = len(reflection.split())
+    #counter
+
+    Element("result").element.innerHTML = f"{count} words"
+</py-script>
+</body>
+</html>
